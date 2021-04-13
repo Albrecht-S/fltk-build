@@ -17,7 +17,7 @@ project(hello)
 
 set (FLTK_COMMIT "branch-1.3" CACHE STRING "FLTK branch name, tag, or commit")
 
-set (BUILD_FLTK "${CMAKE_CURRENT_BINARY_DIR}/fltk")
+set (BUILD_FLTK "${CMAKE_CURRENT_BINARY_DIR}/fltk/${FLTK_COMMIT}")
 
 include(ExternalProject)
 
@@ -35,8 +35,21 @@ ExternalProject_Add(FLTK
 
 # Find FLTK
 
-set (FLTK_DIR ${BUILD_FLTK}/bin/share/fltk CACHE STRING 
-     "FLTK binary folder with FLTKConfig.cmake" FORCE)
+if(APPLE)
+  if(NOT FLTK_DIR)
+    set (FLTK_DIR ${BUILD_FLTK}/bin/FLTK.framework/Resources/CMake/
+      CACHE PATH
+      "FLTK binary folder with FLTKConfig.cmake" FORCE)
+  else()
+    set (FLTK_DIR ${BUILD_FLTK}/bin/FLTK.framework/Resources/CMake/
+      CACHE PATH
+      "FLTK binary folder with FLTKConfig.cmake")
+  endif()
+else()
+  set (FLTK_DIR ${BUILD_FLTK}/bin/share/fltk
+      CACHE PATH
+      "FLTK binary folder with FLTKConfig.cmake")
+endif()
 
 find_package(FLTK CONFIG)
 
