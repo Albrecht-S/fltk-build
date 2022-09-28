@@ -12,8 +12,8 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Please attach a self contained example that allows us to reproduce the problem.
-Such an example typically consists of a single source file (e.g. demo.cxx) and
-build instructions (e.g. `fltk-config --compile demo.cxx). Alternatively, try
+Such an example typically consists of a single source file (e.g. `demo.cxx`) and
+build instructions (e.g. `fltk-config --compile demo.cxx`). Alternatively, try
 to reproduce the bug with one of the included test programs in the `test` or
 `examples` folders. Add a description like this:
 
@@ -39,7 +39,7 @@ Please complete the following information and delete non-applicable lines:
 
 **FLTK Configure / Build Options**
 Please add the complete configure and build command lines if you built FLTK yourself.
-Please include all configure or CMake options and add add all CMake options changed
+Please include all configure or CMake options and add all CMake options you changed
 by using CMake GUI tools (if any).
  - ./configure --enable-cairo ...
  - cmake -G"..." -DCMAKE_BUILD_TYPE=Debug ...

@@ -9,7 +9,8 @@ assignees: ''
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is.
-Please make sure that the desired feature is not available in a later FLTK version (e.g. 1.4.0).
+Please make sure that the desired feature is not available in a later
+FLTK version (e.g. 1.3.8 or 1.4.0).
 
 **I am using FLTK**
  - Version [e.g. 1.4.0]

@@ -13,6 +13,6 @@ This is the wrong place to ask questions about building FLTK or running programs
 
 Please ask user questions in our user group [fltk.general](https://groups.google.com/forum/#!forum/fltkgeneral). Your question will have a wider audience and you will likely get more and quicker replies.
 
-Please include the system/platform (Windows, Linux, macOS), the build system (Visual Studio, CMake, Ninja), compiler (gcc, clang), compiler version, and build error messages in text form (copy and paste preferred). Thank you.
+Please include the system/platform (e.g. Windows, macOS, Linux/X11 or Linux/Wayland), the build system (e.g. Visual Studio, CMake, Ninja), compiler (gcc, clang, ...), compiler version and build error messages in text form (copy and paste preferred). Thank you.
 
 Note that FLTK user questions here (in GitHub Issues) **must** be closed immediately by a maintainer with label `no user support`.
