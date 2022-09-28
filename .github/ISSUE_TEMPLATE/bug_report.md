@@ -21,7 +21,7 @@ Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
-4. See error
+4. See error: ...
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
@@ -29,7 +29,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**FLTK Version (please complete the following information and delete not applicable lines):**
+**FLTK Version**
+Please complete the following information and delete non-applicable lines:
  - Version: [e.g. 1.4.0]
  - Installed system version from: [e.g. Debian 11.4 Bullseye]
  - Downloaded and self-built from: [e.g. Git, Snapshot and version, or tarball/zip]
@@ -37,9 +38,9 @@ If applicable, add screenshots to help explain your problem.
  - If from Git, commit: [e.g. 7d58e2385452]
 
 **FLTK Configure / Build Options**
-If you built FLTK yourself, please add the complete configure and build
-commands here, including all configure or CMake options.
-Please add all CMake options changed by using the CMake GUI tools (if any).
+Please add the complete configure and build command lines if you built FLTK yourself.
+Please include all configure or CMake options and add add all CMake options changed
+by using CMake GUI tools (if any).
  - ./configure --enable-cairo ...
  - cmake -G"..." -DCMAKE_BUILD_TYPE=Debug ...
 
@@ -49,8 +50,7 @@ Please be as precise as possible, e.g. "Linux: Ubuntu 20.04"
  - OS Version: [e.g. Ubuntu 20.04, macOS 12.6, Windows 11]
  - Processor if relevant [e.g. on macOS: M1, Intel]
 
-**Linux/Unix Runtime**
-If applicable:
+**Linux/Unix Runtime, if applicable:**
  - Wayland
  - X11
 
