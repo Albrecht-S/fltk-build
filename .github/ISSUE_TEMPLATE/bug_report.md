@@ -11,6 +11,12 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 **To Reproduce**
+Please attach a self contained example that allows us to reproduce the problem.
+Such an example typically consists of a single source file (e.g. demo.cxx) and
+build instructions (e.g. `fltk-config --compile demo.cxx). Alternatively, try
+to reproduce the bug with one of the included test programs in the `test` or
+`examples` folders. Add a description like this:
+
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -34,6 +40,8 @@ If applicable, add screenshots to help explain your problem.
 If you built FLTK yourself, please add the complete configure and build
 commands here, including all configure or CMake options.
 Please add all CMake options changed by using the CMake GUI tools (if any).
+ - ./configure --enable-cairo ...
+ - cmake -G"..." -DCMAKE_BUILD_TYPE=Debug ...
 
 **Operating System / Platform:**
 Please be as precise as possible, e.g. "Linux: Ubuntu 20.04"
